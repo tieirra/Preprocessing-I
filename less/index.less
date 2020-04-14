@@ -23,14 +23,29 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
+}/* Storing values*/
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+
 /* HTML5 display-role reset for older browsers */
+
+@background-color: pink;
+@font-family: 'Girassol', cursive;
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+section{
+
+	display: flex;
+	flex-direction: row;
+}
+
 body {
 	line-height: 1;
+	@font-family: 'Girassol', cursive;
+
 }
 ol, ul {
 	list-style: none;
@@ -52,8 +67,18 @@ table {
 * {
     box-sizing: border-box;
 }
+ 
+section{
+border-color: pink;
+width: 30px;
+height: 30px;
 
+}
 html, body {
     height: 100%;
 }
+@media(max-width: 500px){
+	background-color: lightcoral;
+}
+
 
