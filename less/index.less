@@ -23,25 +23,31 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}/* Storing values*/
+}
+/* Storing values*/
 @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
 
 
 /* HTML5 display-role reset for older browsers */
-
+/* variables begin */
 @background-color: pink;
-@font-family: 'Girassol', cursive;
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+@font-family:'Girassol', cursive;
+@font-size: 1.6rem;
+ article, aside, details, figcaption, figure, 
+ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+ Header{
+ height: 15%;
+ display: flex;
+ flex-direction: row;
+ color: @background-color;
 
-section{
-
-	display: flex;
-	flex-direction: row;
 }
-
+ .nav a {
+	display: flex;
+	flex-direction: column;
+}
 body {
 	line-height: 1;
 	@font-family: 'Girassol', cursive;
@@ -67,13 +73,7 @@ table {
 * {
     box-sizing: border-box;
 }
- 
-section{
-border-color: pink;
-width: 30px;
-height: 30px;
 
-}
 html, body {
     height: 100%;
 }

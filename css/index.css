@@ -99,6 +99,7 @@ video {
   src: local('Girassol Regular'), local('Girassol-Regular'), url(https://fonts.gstatic.com/s/girassol/v1/JTUUjIo_-DK48laaNC9N.ttf) format('truetype');
 }
 /* HTML5 display-role reset for older browsers */
+/* variables begin */
 article,
 aside,
 details,
@@ -112,9 +113,15 @@ nav,
 section {
   display: block;
 }
-section {
+Header {
+  height: 15%;
   display: flex;
   flex-direction: row;
+  color: pink;
+}
+.nav a {
+  display: flex;
+  flex-direction: column;
 }
 body {
   line-height: 1;
@@ -141,11 +148,6 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-}
-section {
-  border-color: pink;
-  width: 30px;
-  height: 30px;
 }
 html,
 body {
